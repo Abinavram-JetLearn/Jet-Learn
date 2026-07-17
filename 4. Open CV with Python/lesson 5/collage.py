@@ -14,7 +14,7 @@ for i in imgs:
     w += img.size[0]
     h += img.size[1]
 mw = w // 3
-mh = h //
+mh = h // 3
 print(mw, mh)
 
 for i in imgs:
