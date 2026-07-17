@@ -26,5 +26,5 @@ video = "first_video.avi"
 videos = cv2.VideoWriter(video, 0, 0.5, (mw, mh))
 for i in imgs:
     videos.write(cv2.imread(os.path.join(path, i)))
-
+# hi
 videos.release()
