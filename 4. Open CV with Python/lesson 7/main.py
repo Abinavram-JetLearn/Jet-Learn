@@ -18,7 +18,7 @@ count = 1
 while(video.isOpened()):
     return_val, img = video.read()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faces = face_detection.detectMultiScale(gray, 1.2, 5)
+    faces = face_detection.detectMultiScale(gray, 1.3, 5)
     print(faces)
     for x,y,w,h in faces:
         face_rect = cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 5)
