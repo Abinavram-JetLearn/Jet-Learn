@@ -9,7 +9,7 @@ path = os.path.join(datasets, name)
 if not os.path.isdir(path):
     os.mkdir(path)
 
-video = cv2.VideoCapture(1)
+video = cv2.VideoCapture(0)
 
 data = "4. Open CV with Python/lesson 7/haarcascade_frontalface_default.xml"
 face_detection = cv2.CascadeClassifier(data)
