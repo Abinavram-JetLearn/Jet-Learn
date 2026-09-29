@@ -7,13 +7,13 @@ class Bank():
         self.__pin = pin
         self.__cardnum = cardnum
     def printdetails(self):
-        answer = input("Type Print to Print Details: ").lower().strip()
-        if answer == "print":
+        self.answer = input("Type Print to Print Details: ").lower().strip()
+        if self.answer == "print":
             print(self.name, self.age, self.balance)
-        answer = input("Type 'yes' to see secret details?: ").lower().strip()
-        if answer == "yes":
-            answer2 = input("Type the pin: ").lower()
-            if answer2 == self.__pin:
+        self.answer2 = input("Type 'yes' to see secret details?: ").lower().strip()
+        if self.answer2 == "yes":
+            self.answer3 = input("Type the pin: ").lower()
+            if self.answer3 == self.__pin:
                 print(self.__address, self.__cardnum, self.balance)
             else:
                 print("wrong pin")
