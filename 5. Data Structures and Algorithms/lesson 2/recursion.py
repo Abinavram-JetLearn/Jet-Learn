@@ -31,3 +31,11 @@ def fibonnacci(n):
         return fibonnacci(n - 1) + fibonnacci(n - 2)
 
 print(fibonnacci(10))
+
+def sum_of_powers(n):
+    if n == 1:
+        return n
+    else:
+        return  n**2 + sum_of_numbers(n-1)
+
+print(sum_of_powers(4))
