@@ -39,3 +39,7 @@ def sum_of_powers(n):
         return  n**2 + sum_of_numbers(n-1)
 
 print(sum_of_powers(4))
+
+answer = input()
+for i in range(len(answer)):
+    print(f".....{answer}")
