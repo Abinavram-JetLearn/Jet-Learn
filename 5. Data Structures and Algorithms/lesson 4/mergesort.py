@@ -9,5 +9,26 @@ def Mergesort(list):
         print(right)
         Mergesort(left)
         Mergesort(right)
+        i = 0
+        j = 0
+        k = 0
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                list[k] = left[i]
+                k += 1
+                i += 1
+            else:
+                list[k] = right[j]
+                k += 1
+                j += 1
+        while j < len(right):
+            list[k] = right[j]
+            k += 1
+            j += 1
+        while i < len(left):
+            list[k] = left[i]
+            k += 1
+            i += 1
 
 Mergesort(list)
+print(list)
